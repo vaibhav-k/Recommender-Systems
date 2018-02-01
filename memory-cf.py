@@ -47,7 +47,7 @@ for line in test_data.itertuples():
 user_similarity = pairwise_distances(train_data_matrix, metric='cosine')
 item_similarity = pairwise_distances(train_data_matrix.T, metric='cosine')
 
-#MAking predictions
+#Making predictions
 item_prediction = predict(train_data_matrix, item_similarity, type='item')
 user_prediction = predict(train_data_matrix, user_similarity, type='user')
 
